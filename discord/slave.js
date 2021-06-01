@@ -11,7 +11,6 @@ client.on("ready", () => {
 
 client.on("message", (msg) => {
   if (!msg.guild && !msg.author.bot) {
-    console.log(msg);
     process.send({ userId: msg.author.id });
   }
 });
